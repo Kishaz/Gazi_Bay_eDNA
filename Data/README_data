@@ -3,4 +3,5 @@ The data folder contains
 2.read_stat.xlsx (statistics of sequence reads tracked from raw data input to taxonomic assignment in the MiFish Pipeline (http://mitofish.aori.u-tokyo.ac.jp/mifish/))
 3.v30_Taxonomy.xlsx (output of MiFish pipeline analysis using the original/First database version 30)
 4.v3.85_Taxonomy.xlsx (output of MiFish pipeline analysis using the updated database version 3.85 (2022-11))
+5.project_data.xlsx (data from catch assessment survey, underwater survey and eDNA with respective transformation)
 
