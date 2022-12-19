@@ -1,17 +1,11 @@
 ---
-title: "Analysis of Gazi bay eDNA data"
+title: "Analysis of Gazi bay eDNA data-2022-11"
 output: html_notebook
 ---
 
 
 Load these packages:
 
-library(vegan)
-library(ggplot2)
-library(dplyr)
-library(cowplot)
-library(ggplot2)
-library(corrplot)
 ```{r packages, include=FALSE}
 library(vegan)
 library(ggplot2)
@@ -31,6 +25,7 @@ st_df <- data[,1:8] # subset columns
 
 ## Community diversity
 ### Alpha diversity
+
 Shannon's H'
 ```{r H}
 H <- diversity(df)
@@ -84,7 +79,7 @@ plot_grid(plot.shan + theme(legend.position = "none"), plot.rich + theme(legend.
 
 ```
 
-Save pdf
+Save a pdf in the appropriate folder
 ```{r}
 pdf("~/Desktop/eDNA_221124/R_eDNA/Gazi-eDNA/figures/alpha-eDNA_sites.pdf",
     width = 12,
@@ -178,7 +173,7 @@ legend <- get_legend(pcoa.data.jac.plot) # extract plot legend
 plot_grid(pcoa.data.bray.plot + theme(legend.position = 'none'), pcoa.data.jac.plot + theme(legend.position = 'none'), legend, ncol = 3, rel_widths = c(1,1,0.5))
 
 ```
-save PDF
+Save a pdf in the appropriate folder
 ```{r}
 pdf("~/Desktop/eDNA_221124/R_eDNA/Gazi-eDNA/figures/beta-eDNA_sites.pdf",
     width = 12,
