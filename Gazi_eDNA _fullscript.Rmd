@@ -420,7 +420,7 @@ corrplot <- ggplot(ccm, aes(x = variable, y = Species)) +
     scale_y_discrete(limits = rev(levels(ccm$Species))) 
 corrplot
 ```
-Save PDF
+Save a pdf in the appropriate folder
 ```{r}
 pdf("~/Desktop/eDNA_221124/R_eDNA/Gazi-eDNA/figures/corrplot.pdf",
     width = 12,
